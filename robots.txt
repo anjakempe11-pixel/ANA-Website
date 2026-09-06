@@ -1,5 +1,4 @@
-# AUSFÜLLEN: echte Domain eintragen
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ana-gebaeudereinigung.de/sitemap.xml
+Sitemap: https://anjakempe11-pixel.github.io/ANA-Geb-udereinigung/sitemap.xml
