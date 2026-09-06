@@ -1,4 +1,5 @@
+# Vorschau - noch nicht fuer Suchmaschinen freigegeben.
+# Freischalten: unten "Disallow: /" durch "Allow: /" ersetzen und in
+# allen HTML-Dateien noindex,nofollow auf index,follow aendern.
 User-agent: *
-Allow: /
-
-Sitemap: https://anjakempe11-pixel.github.io/ANA-Geb-udereinigung/sitemap.xml
+Disallow: /
