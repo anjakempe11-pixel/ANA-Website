@@ -1,0 +1,101 @@
+ANA GEBÄUDEREINIGUNG OST WEST — WEBSITE
+=======================================
+
+1. WAS HIER DRIN IST
+--------------------
+ana-website/
+  index.html ................... Startseite
+  leistungen.html .............. Übersicht der Leistungen
+  leistungen/
+    gebaeudereinigung.html ..... Detailseite Gebäudereinigung
+    unterhaltsreinigung.html ... Detailseite Unterhaltsreinigung
+    fensterreinigung.html ...... Detailseite Fensterreinigung
+  ueber-uns.html ............... Über uns
+  kontakt.html ................. Kontakt und Angebotsanfrage
+  impressum.html ............... Impressum (noindex)
+  datenschutz.html ............. Datenschutzerklärung (noindex)
+  robots.txt ................... Anweisung für Suchmaschinen
+  sitemap.xml .................. Seitenverzeichnis für Google
+  assets/
+    style.css .................. gesamtes Design, eine Datei
+    script.js .................. Menü, Einblenden, Jahreszahl
+    logo.webp .................. Logo
+    favicon.png ................ Symbol im Browser-Tab
+    apple-touch-icon.png ....... Symbol für iPhone-Startbildschirm
+
+Reines HTML/CSS/JS. Kein Baukasten, kein WordPress, keine Datenbank.
+
+
+2. HOCHLADEN
+------------
+Den kompletten Inhalt des Ordners ana-website/ per FTP in das
+Web-Verzeichnis des Hosters legen (meist htdocs/, public_html/ oder www/).
+Die Ordnerstruktur muss dabei erhalten bleiben — assets/ und leistungen/
+gehören mit hoch.
+
+Wichtig: HTTPS beim Hoster aktivieren. Die Datenschutzerklärung sagt
+zu, dass die Seite verschlüsselt ausgeliefert wird.
+
+
+3. MUSS AUSGEFÜLLT WERDEN — SONST ABMAHNRISIKO
+----------------------------------------------
+[ ] impressum.html: vollständiger Firmenname mit Rechtsform
+[ ] impressum.html: Straße, Hausnummer, PLZ, Ort
+[ ] impressum.html: USt-IdNr. nach § 27a UStG
+    (oder: Hinweis auf Kleinunternehmerregelung nach § 19 UStG)
+[ ] impressum.html: zuständige Handwerkskammer
+[ ] datenschutz.html: gleiche Anschrift wie im Impressum
+[ ] datenschutz.html: Name und Anschrift des Hosting-Anbieters
+
+
+4. SOLLTE AUSGEFÜLLT WERDEN
+---------------------------
+[ ] Konkrete Orte und Landkreise im Einsatzgebiet, dazu der Umkreis in km
+    → betrifft: index.html, kontakt.html, leistungen-Detailseiten
+    → wichtigster Faktor, damit die Seite bei lokalen Suchanfragen erscheint
+[ ] Erreichbarkeitszeiten (kontakt.html)
+[ ] Preismodell: Stundensatz oder Festpreis, Anfahrtskosten, Zahlungsarten
+[ ] Ist die Erstbesichtigung kostenlos?
+[ ] Welche der fünf Zusatzleistungen werden wirklich angeboten?
+    (leistungen.html — nicht Angebotenes bitte streichen)
+[ ] Teamgröße und seit wann Laith Hefdhi in der Branche ist (ueber-uns.html)
+[ ] Betriebshaftpflicht, Mitgliedschaft in der Gebäudereiniger-Innung
+[ ] Echte Domain eintragen — steht an vier Stellen pro Seite
+    (canonical, og:url) sowie in robots.txt und sitemap.xml
+
+Alle diese Stellen sind im Quelltext mit  <!-- AUSFÜLLEN: ... -->
+markiert. In einem Editor nach "AUSFÜLLEN" suchen — 34 Fundstellen.
+
+
+5. BEWUSST NICHT ENTHALTEN
+--------------------------
+Keine erfundenen Kundenstimmen, keine erfundenen Preise, keine
+erfundenen Referenzen, keine Jahreszahlen zur Berufserfahrung.
+Sobald echte Angaben vorliegen, können sie ergänzt werden.
+
+Kein Kontaktformular: ein Formular ohne Server-Teil funktioniert nicht,
+und mit Formular wären zusätzliche Datenschutzangaben nötig. Telefon
+und E-Mail sind auf jeder Seite prominent verlinkt.
+
+
+6. FARBEN
+---------
+Navy    #0A2540   aus dem Logo, Flächen und Überschriften
+Blau    #1F6FB2   aus dem Logo, sparsam eingesetzt
+Bernstein #C8871F Kontrastfarbe: Buttons, Symbole, Akzentlinien
+          #8F5A0C Bernstein-Text auf hellem Grund
+          #DFA43A Bernstein-Text auf dunklem Grund
+
+Alle Farbkombinationen erfüllen WCAG 2.1 Stufe AA (Kontrast ≥ 4.5:1
+für Text). Die geprüften Werte stehen als Kommentar oben in style.css.
+
+Farbe ändern: in style.css ganz oben im Block :root die Werte hinter
+--amber, --amber-ink und --amber-light anpassen. Sie gelten dann für
+alle Seiten gleichzeitig.
+
+
+7. TEXTE ÄNDERN
+---------------
+Die Dateien lassen sich mit jedem Texteditor öffnen (Notepad++, VS Code).
+Kopf- und Fußbereich stehen in jeder Datei einzeln — eine Änderung dort
+muss in allen neun Dateien gemacht werden.

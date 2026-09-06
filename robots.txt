@@ -1,0 +1,5 @@
+# AUSFÜLLEN: echte Domain eintragen
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ana-gebaeudereinigung.de/sitemap.xml
